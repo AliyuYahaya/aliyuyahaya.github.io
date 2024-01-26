@@ -19,7 +19,7 @@
         <a href="https://github.com/AliyuYahaya" class="btn2" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://royalalite@gmail.com" class="btn2"><i class="fa-solid fa-envelope"></i></a>
     </header>
-    <nav>
+    <nav class="dropdown" id="nav">
         <div class="nav">
             <a href="#about" >About</a>
             <a href="#Skill" >Skills</a>
@@ -27,7 +27,6 @@
             <a href="#services" >Services</a>
             <a href="#contact" >Contact</a>
         </div>
-        
     </nav>
     <div class=".section">
         <section id="about" class="about">
@@ -118,6 +117,16 @@
         <p>&copy; 2023 Aliyu Yahaya. All rights reserved.</p>
     </footer>
     </div>
-
+    <script type="text/javascript">
+    $(document).ready(function(){
+        var width = screen.width;
+   
+          if (screen.width <= 600) {
+            var gfg_down = 
+                document.getElementById("nav");
+                gfg_down.remove();
+          }
+    });
+  </script>
 </body>
 </html>
