@@ -220,7 +220,7 @@ span {
     margin: 0px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1170px) {
     .card {
         width: 80%;
     }
