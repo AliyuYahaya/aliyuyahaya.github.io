@@ -191,10 +191,10 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: auto;
+    width: 100%;
 }
 .skills {
-    width: 100%;
+    width: auto;
 }
 
 .card2 {
@@ -239,6 +239,8 @@ span {
     }
     .skills div div {
         flex-direction: column;
+        width: auto;
+        margin-bottom: 10px;
     }
     header {
         display: none;
@@ -253,5 +255,13 @@ span {
     .skills {
         width: auto;
         overflow-x: auto;
+    }
+
+    li {
+        padding-bottom: 10px;
+    }
+
+    section {
+        padding: 40px 20px;
     }
 }
