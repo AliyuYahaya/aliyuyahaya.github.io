@@ -181,3 +181,10 @@ button {
 .experience h3{
     margin-top: 20px;
 }
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
