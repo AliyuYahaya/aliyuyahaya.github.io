@@ -190,7 +190,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 100%;
+    width: auto;
 }
 .skills {
     width: 100%;
@@ -240,7 +240,7 @@ span {
         flex-direction: column;
     }
     header {
-        display: hidden;
+        display: none;
     }
     .name h1 {
         font-size: 50px;
@@ -249,5 +249,8 @@ span {
         font-size: 16px;
         margin-bottom: 5px;
     }
-    
+    .skills {
+        width: auto;
+        overflow-x: auto;
+    }
 }
