@@ -129,31 +129,10 @@
     <div id="update-popup">
       <div id="popup-content">
         <p>A new version of this website is available!</p>
-        <button id="update-button">Go to New Version</button>
-        <button id="close-button">Not Now</button>
+        <a href="aliyuyahaya.github.io/portfolio-v3/"><button id="update-button">Go to New Version</button></a>
       </div>
     </div>
     <script>
-        // Function to show the popup
-        function showUpdatePopup() {
-          const popup = document.getElementById('update-popup');
-          popup.style.display = 'flex';
-        }
-        
-        // Redirect to the new version
-        document.getElementById('update-button').addEventListener('click', () => {
-          window.location.href = 'https:aliyuyahaya.github.io/portfolio-v3/'; // Replace with the new version URL
-        });
-        
-        // Close the popup
-        document.getElementById('close-button').addEventListener('click', () => {
-          const popup = document.getElementById('update-popup');
-          popup.style.display = 'none';
-        });
-        
-        // Trigger the popup (example: after 5 seconds)
-        setTimeout(showUpdatePopup, 5000);
-        
         /*function scrollToTop() {
             window.scrollTo(0, 0);
         } */
