@@ -132,10 +132,6 @@
     </footer>
     <a><button onclick="scrollToTop()">Top</button></a>
     <script>
-        function scrollToTop() {
-            window.scrollTo(0, 0);
-        }
-
         // Function to show the popup
         function showUpdatePopup() {
           const popup = document.getElementById('update-popup');
@@ -155,7 +151,10 @@
         
         // Trigger the popup (example: after 5 seconds)
         setTimeout(showUpdatePopup, 5000);
-
+        
+        function scrollToTop() {
+            window.scrollTo(0, 0);
+        }
     </script>
 </body>
 </html>
