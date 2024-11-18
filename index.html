@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+// <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,7 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
+    <!--
     <header id="header">
         <nav>
             <a href="#project">Projects</a>
@@ -119,18 +120,19 @@
             </p>    
         </div>
     </section>
-    <div id="update-popup" style="display: none;">
+
+
+    <footer>
+        <p>&copy; 2024 Aliyu Yahaya. All rights reserved.</p>
+    </footer>
+    <a><button onclick="scrollToTop()">Top</button></a> -->    
+    <div id="update-popup">
       <div id="popup-content">
         <p>A new version of this website is available!</p>
         <button id="update-button">Go to New Version</button>
         <button id="close-button">Not Now</button>
       </div>
     </div>
-
-    <footer>
-        <p>&copy; 2024 Aliyu Yahaya. All rights reserved.</p>
-    </footer>
-    <a><button onclick="scrollToTop()">Top</button></a>
     <script>
         // Function to show the popup
         function showUpdatePopup() {
@@ -152,9 +154,9 @@
         // Trigger the popup (example: after 5 seconds)
         setTimeout(showUpdatePopup, 5000);
         
-        function scrollToTop() {
+        /*function scrollToTop() {
             window.scrollTo(0, 0);
-        }
+        } */
     </script>
 </body>
 </html>
