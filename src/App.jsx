@@ -41,7 +41,12 @@ function App() {
     <div className={`portfolio ${darkMode ? 'dark-mode' : ''}`}>
       <header className="header">
         <h1>Aliyu Yahaya</h1>
-        <p>Cape Town-based Software Developer</p>
+        <p>Software Engineer</p>
+        <div className="contact-info">
+          <span>Email: <a href="mailto:aliyuyahaya1453@gmail.com">aliyuyahaya1453@gmail.com</a></span> |
+          <span>South Africa</span> |
+          <span><a href="#">Website</a></span>
+        </div>
         <button onClick={toggleDarkMode} className="dark-mode-toggle">
           {darkMode ? 'Light Mode' : 'Dark Mode'}
         </button>
@@ -59,127 +64,109 @@ function App() {
       </header>
       
       <div className='cluster'>
-        <section className="about">
-          <h2>About</h2>
-          <div className='about-item'>
-            <h4 className='about-item-header'>Location</h4>
-            <p>Cape Town, South Africa</p>
-          </div>
-          <div className='about-item'>
-            <h4 className='about-item-header'>Bio</h4>
-            <p>
-            I'm a Cape Town-based software engineer studying towards my BSc in Computer Science. My primary area of interest is Data Science and Artificial Intelligence with a curiosity to learn about different technologies
-            <br />
-            <br />
-            Over the last two years I have had experience working on full stack applications. I've also founded a startup helping matric students figure out their career path.
-
-            <br />
-            <br />
-            I'm on the lookout for an entry level role where I can grow my skills, learn new ones and contribute to the industry
-            </p>
-          </div>
-          <div className='about-item'>
-            <h4 className='about-item-header'>Resume</h4>
-            <a href="https://docs.google.com/document/d/17dMb9Yp4QdZLIZA_Lw7LLKBbnJMQdGVROfT6hoDtiCg/edit?usp=sharing" className="resume-link" target='_blank'>Resume</a>
+        <section className="summary">
+          <h2>Summary</h2>
+          <p>
+            Software Engineer with experience in frontend and backend development, cloud deployment, and mentoring. Passionate about building modern web platforms and helping others grow in tech.
+          </p>
+        </section>
+        <section className="education">
+          <h2>Education</h2>
+          <div className="education-item">
+            <h3>Varsity College</h3>
+            <p>BSc. Computer Science</p>
+            <p>Jan 2024 – Dec 2026</p>
           </div>
         </section>
-        <div className="sub-cluster">
-          <section className="experience">
-            <h2>Experience</h2>
-            <div className="experience-items">
-              <div className="experience-item">
-                <h3>Jr. Web Developer</h3>
-                <p className='company'>Cascade Software Solutions</p>
-                <p>2022 - 2023</p>
-              </div>
-              <div className="experience-item">
-                <h3>Founder</h3>
-                <p className='company'>Uni-Leap</p>
-                <p>2024 - Present</p>
-              </div>
-              <div className="experience-item">
-                <h3>Web Developer</h3>
-                <p className='company'>KRA Aviation</p>
-                <p>2024 - Present</p>
-              </div>
+        <section className="experience">
+          <h2>Work Experience</h2>
+          <div className="experience-items">
+            <div className="experience-item">
+              <h3>Web Developer</h3>
+              <p className='company'>Cascade Software Solutions</p>
+              <p>Nov 2023 – Mar 2024</p>
+              <ul>
+                <li>Designed, developed, and deployed custom websites for clients.</li>
+                <li>Built mobile responsive sites and improved SEO.</li>
+                <li>Utilized cloud services for deployment.</li>
+              </ul>
             </div>
-          </section>
-
-          <section className="skills">
-            <h2>Skills</h2>
-            <div className="skills-list">
-              <div className="span">
-                <img className='logo' src={html} alt='HTML' />
-                <p>HTML</p>
-              </div>
-              <div className="span">
-                <img className='logo' src={css} alt='CSS' />
-                <p>CSS</p>
-              </div>
-              <div className="span">
-                <img className='logo' src={js} alt='JavaScript' />
-                <p>JavaScript</p>
-              </div>
-              <div className="span">
-                <img className='logo' src={react} alt='React' />
-                <p>React</p>
-              </div>
-              <div className="span">
-                <img className='logo' src={vite} alt='Vite' />
-                <p>Vite</p>
-              </div>
-              <div className="span">
-                <img className='logo' src={node} alt='Node.js' />
-                <p>Node.js</p>
-              </div>
-              <div className="span">
-                <img className='logo' src={python} alt='Python' />
-                <p>Python</p>
-              </div>
-              <div className="span">
-                <img className='logo' src={react} alt='React Native' />
-                <p>React Native</p>
-              </div>
-              <div className="span">
-                <img className='logo' src={mongo} alt='MongoDB' />
-                <p>MongoDB</p>
-              </div>
-              <div className="span">
-                <img className='logo' src={firebase} alt='Firebase' />
-                <p>Firebase</p>
-              </div>
-              <div className="span">
-                <img className='logo' src={java} alt='Java' />
-                <p>Java</p>
-              </div>
+            <div className="experience-item">
+              <h3>Freelancer</h3>
+              <p>Jan 2024 – Jun 2025</p>
+              <ul>
+                <li>Developed frontends and logos for ZATech members.</li>
+                <li>Used Figma, Canva, Python (Flask, FastAPI), React Native, and React.</li>
+              </ul>
             </div>
-          </section>
-        </div>
+            <div className="experience-item">
+              <h3>Student Mentor</h3>
+              <p>GRIT3sixT, IIE’s Varsity College</p>
+              <p>Feb 2025 – Jun 2025</p>
+              <ul>
+                <li>Mentored first-year students in coding and university life.</li>
+                <li>Helped set up Github, LinkedIn, and first projects.</li>
+              </ul>
+            </div>
+            <div className="experience-item">
+              <h3>Software Engineering Intern</h3>
+              <p>Code Infinity</p>
+              <p>Jun 2025 – Present</p>
+              <ul>
+                <li>Revamped onboarding workflow using Python.</li>
+                <li>Integrated multiple APIs in Slack workflow.</li>
+                <li>Collaborated with a larger team.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section className="skills">
+          <h2>Tools & Skills</h2>
+          <div className="skills-list">
+            <div><strong>Frontend:</strong> HTML, CSS, JavaScript, React.js, Figma, VueJS, NextJS</div>
+            <div><strong>Software Dev:</strong> Java, C#(MVC), Figma, Python</div>
+            <div><strong>Backend:</strong> MongoDB, PostgreSQL, Supabase, Firebase, Azure, Tina4</div>
+            <div><strong>Skills:</strong> Critical thinking, problem solving, communication, fast learner, attention to detail</div>
+          </div>
+        </section>
       </div>
       
       <section className="projects">
-        <h2>Flagship Projects</h2>
+        <h2>Freelance & Personal Projects</h2>
         <div className="project-grid">
           <div className="project-item">
-            <img className="project-logo" src={u_l} alt="uni-leap" />
-            <h3>Uni-Leap Platform</h3>
-            {getStatusBar("MVP working")}
-            <p>Status: MVP working.</p>
-            <a href="https://uni-leap.com/" target="_blank" rel="noopener noreferrer">Website 🡪</a>
+            <h3>ResumeEvalu8</h3>
+            <p>An AI Resume Analysis for employers. Figma redesign and full stack development. <strong>Status:</strong> Live in production.</p>
+            <a href="#">Website 🡪</a>
           </div>
           <div className="project-item">
-            <img className="project-logo" src={kra} alt="kra" />
             <h3>KRA Aviation Website</h3>
-            {getStatusBar("60% Complete")}
-            <p>Status: 60% Complete.</p>
-            <a href="https://kraaviation.com/" target="_blank" rel="noopener noreferrer">Website 🡪</a>
+            <p>Corporate website for KRA Aviation. Built with NextJS. <strong>Status:</strong> Complete.</p>
+            <a href="#">Website 🡪</a>
           </div>
           <div className="project-item">
-            <img className="project-logo" src={resume} alt="resume" />
-            <h3>ResumeEvalu8 Frontend Redesign</h3>
-            {getStatusBar("Complete")}
-            <p>Status: Complete.</p>
-            <a href="https://resume.digestii.com/" target="_blank" rel="noopener noreferrer">Website 🡪</a>
+            <h3>HouseParties</h3>
+            <p>Events Management platform. React + Python + NodeJs + Postgres. <strong>Status:</strong> Complete.</p>
+          </div>
+          <div className="project-item">
+            <h3>Allcare Forms</h3>
+            <p>Internal forms tool for Allcare Specialists Hospital. NextJs + Supabase. Enhanced RBAC and Auth. <strong>Status:</strong> Complete.</p>
+          </div>
+          <div className="project-item">
+            <h3>Royal Fees</h3>
+            <p>School Management tool for Kano Royal Academy. NextJs + Supabase + Shadcn. Invoicing and fees tracking. <strong>Status:</strong> Complete.</p>
+          </div>
+          <div className="project-item">
+            <h3>Allcare HMS</h3>
+            <p>Internal HMS for Allcare Specialists Hospitals. React + Vite + Tailwind + Supabase and Clerk. Highly secure. <strong>Status:</strong> Complete.</p>
+          </div>
+          <div className="project-item">
+            <h3>C# MVC (University Project, Year 2, Sem 1)</h3>
+            <p>C# MVC Web App for Cloud Development Module. <strong>Status:</strong> Part 3/3.</p>
+          </div>
+          <div className="project-item">
+            <h3>C# MVC (University Project, Year 2, Sem 2)</h3>
+            <p>C# MVC Web App for Cloud Development Module. <strong>Status:</strong> Part 1/3.</p>
           </div>
         </div>
       </section>

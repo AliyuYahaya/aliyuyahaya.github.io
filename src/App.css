@@ -134,24 +134,25 @@ p {
 }
 
 /* Cluster Styles */
+
 .cluster {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
 }
 
+
 .sub-cluster {
-  width: 60%;
+  width: 100%;
 }
 
 /* About section */
-.about {
+
+.summary, .education, .skills {
   background-color: #fff;
-  width: 40%;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
-  
 }
 
 .about p {
@@ -239,11 +240,13 @@ p {
   margin-bottom: 20px;
 }
 
+
 .skills-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px;
 }
+
 
 .skills-list .span {
   display: flex;
@@ -256,6 +259,10 @@ p {
   border-radius: 10px;
   border: 2px solid black;
   text-wrap: wrap;
+  font-size: 1rem;
+}
+.skills-list div {
+  margin-bottom: 8px;
   font-size: 1rem;
 }
 
@@ -279,11 +286,15 @@ p {
   gap: 20px;
 }
 
+
 .project-item {
   background-color: #f0f0f0;
-  height: 200px;
+  min-height: 120px;
   border-radius: 10px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .project-logo {
